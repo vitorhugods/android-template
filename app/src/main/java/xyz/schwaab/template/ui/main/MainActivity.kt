@@ -1,7 +1,7 @@
 package xyz.schwaab.template.ui.main
 
 import android.os.Bundle
-import xyz.schwaab.template.ui.main.MainFragment
+import org.koin.androidx.fragment.android.replace
 
 import xyz.schwaab.template.R
 import xyz.schwaab.template.base.BaseActivity
@@ -13,8 +13,8 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.main_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                    .replace(R.id.container, MainFragment.newInstance())
-                    .commitNow()
+                .replace<MainFragment>(R.id.container)
+                .commitNow()
         }
     }
 }
