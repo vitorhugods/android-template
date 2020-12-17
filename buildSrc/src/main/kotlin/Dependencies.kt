@@ -23,6 +23,7 @@ object Versions {
     const val KOTLINX_SERIALIZATION = "1.0.1"
     const val KLUENT = "1.64"
     const val KTLINT = "0.39.0"
+    const val LIVE_DATA_TESTING = "1.1.2"
     const val MATERIAL_COMPONENTS = "1.2.1"
     const val OKHTTP = "4.9.0"
     const val PICASSO = "2.71828"
@@ -80,8 +81,10 @@ object LibSupport {
 
 object LibTesting {
     const val ANDROID_CORE_TESTING = "androidx.arch.core:core-testing:${Versions.ANDROID_ARCH}"
+    const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.COROUTINES}"
     const val JUNIT = "junit:junit:${Versions.JUNIT}"
-    const val KLUENT = "org.amshove.kluent:kluent:${Versions.KLUENT}"
+    const val KLUENT = "org.amshove.kluent:kluent-android:${Versions.KLUENT}"
+    const val LIVE_DATA_TESTING = "com.jraska.livedata:testing-ktx:${Versions.LIVE_DATA_TESTING}"
     const val ROBOLECTRIC = "org.robolectric:robolectric:${Versions.ROBOLECTRIC}"
 }
 

@@ -13,7 +13,7 @@ android {
         applicationId = AppCoordinates.APP_ID
         versionCode = AppCoordinates.APP_VERSION_CODE
         versionName = AppCoordinates.APP_VERSION_NAME
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "xyz.schwaab.template.TestAppJUnitRunner"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -78,10 +78,13 @@ dependencies {
     implementation(LibUI.RECYCLERVIEW)
 
     testImplementation(LibTesting.ANDROID_CORE_TESTING)
+    testImplementation(LibTesting.COROUTINES)
     testImplementation(LibTesting.JUNIT)
     testImplementation(LibTesting.KLUENT)
     testImplementation(LibTesting.ROBOLECTRIC)
+    testImplementation(LibTesting.LIVE_DATA_TESTING)
 
+    androidTestImplementation(LibTesting.KLUENT)
     androidTestImplementation(LibAndroidTesting.ANDROIDX_TEST_EXT_JUNIT)
     androidTestImplementation(LibAndroidTesting.ANDROIDX_TEST_RULES)
     androidTestImplementation(LibAndroidTesting.ESPRESSO_CORE)
