@@ -1,10 +1,12 @@
-package xyz.schwaab.template
+package xyz.schwaab.template.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import xyz.schwaab.template.ui.main.MainFragment
 
-class MainActivity : AppCompatActivity() {
+import xyz.schwaab.template.R
+import xyz.schwaab.template.base.BaseActivity
+
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

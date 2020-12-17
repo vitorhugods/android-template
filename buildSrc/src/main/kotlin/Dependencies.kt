@@ -55,6 +55,7 @@ object LibCoroutines {
 object LibDI {
     const val KOIN = "org.koin:koin-android:${Versions.KOIN}"
     const val KOIN_VIEW_MODEL = "org.koin:koin-android-viewmodel:${Versions.KOIN}"
+    const val KOIN_FRAGMENT = "org.koin:koin-androidx-fragment:${Versions.KOIN}"
 }
 
 object LibHttp {
